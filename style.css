@@ -1,0 +1,51 @@
+/*BODY IN GENERAL*/
+body{
+  background-color: rgb(0, 51, 0);
+  color: rgb(0, 51, 0);
+}
+/*CONTAINER*/
+.container{
+  background-color: white;
+  border-radius: 1%;
+  width: 50%;
+  margin: 10% auto;
+  padding: 2%
+}
+/*THE QUOTE DISPLAY*/
+.quote{
+  margin: 2%;
+  font-size: 1.5rem;
+  display: inline;
+}
+/*AUTHOR OF THE QUOTE*/
+.author{
+  text-align: right;
+  
+}
+/*BOTTOM PART OF CONTAINER*/
+.ending{
+  display: block;
+   margin-bottom: 7%
+}
+.share{
+  float: left;
+  margin: 1.5%;
+ }
+.share i{
+  font-size: 1.5rem;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  padding-top: 5%;
+}
+ .new-quote{
+  float: right;
+   font-size: 1rem;   
+   padding: 1.5%;
+   border-radius: 2rem;
+ }
+.button{
+  background-color: rgb(0, 51, 0);
+  color: rgb(153, 255, 153);
+}
+
