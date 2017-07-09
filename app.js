@@ -77,6 +77,35 @@ function getQuote(){
     });
 
 }
+/**/
+ 
+ window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1886159281706306',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+
+/**/
 $(document).ready(function(){
     $newquote.on('click', getQuote);
+    document.getElementById('facebookshare').onclick = function() {
+  FB.ui({
+  method: 'feed',
+  link: 'https://vongmaianh170196.github.io/Today_quote/',
+  caption: 'by Anh Vo',
+description: 'Mai Anh ',
+  
+}, function(response){});
+}
+    
 });
