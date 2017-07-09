@@ -103,7 +103,6 @@ function getQuote(){
   method: 'feed',
   link: 'https://vongmaianh170196.github.io/Today_quote/',
   caption: 'by Anh Vo',
-description: newText,
   
 }, function(response){});
 };
