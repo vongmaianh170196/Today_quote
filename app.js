@@ -100,10 +100,10 @@ function getQuote(){
 /**FUNCTION SHARE TO FACEBOOK */
  function sharefb() {
   FB.ui({
-  method: 'share',
+  method: 'feed',
   link: 'https://vongmaianh170196.github.io/Today_quote/',
   caption: 'by Anh Vo',
-description: 'Mai Anh ',
+description: newText,
   
 }, function(response){});
 };
