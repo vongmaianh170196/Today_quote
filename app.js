@@ -98,7 +98,7 @@ function getQuote(){
    }(document, 'script', 'facebook-jssdk'));
 /*END SET UP FB SDK FOR JD*/
 /**FUNCTION SHARE TO FACEBOOK */
- function sharefb() {
+ function () {
   FB.ui({
   method: 'feed',
   link: 'https://vongmaianh170196.github.io/Today_quote/',
@@ -109,6 +109,13 @@ function getQuote(){
 /**END FUNCTION SHARE TO FACEBOOK */
 $(document).ready(function(){
     $newquote.on('click', getQuote);
-    $('#facebookshare').on('click', sharefb);
+    document.getElementById('facebookshare').onclick=function () {
+  FB.ui({
+  method: 'feed',
+  link: 'https://vongmaianh170196.github.io/Today_quote/',
+  caption: 'by Anh Vo',
+  
+}, function(response){});
+};
     
 });
