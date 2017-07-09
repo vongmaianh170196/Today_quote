@@ -100,7 +100,7 @@ function getQuote(){
 /**FUNCTION SHARE TO FACEBOOK */
  function sharefb() {
   FB.ui({
-  method: 'feed',
+  method: 'share',
   link: 'https://vongmaianh170196.github.io/Today_quote/',
   caption: 'by Anh Vo',
 description: 'Mai Anh ',
