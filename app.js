@@ -77,7 +77,7 @@ function getQuote(){
     });
 
 }
-/**/
+/*SET UP FACEBOOK SDK FOR JS*/
  
  window.fbAsyncInit = function() {
     FB.init({
@@ -96,10 +96,9 @@ function getQuote(){
      js.src = "//connect.facebook.net/en_US/sdk.js";
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
-/**/
-$(document).ready(function(){
-    $newquote.on('click', getQuote);
-    document.getElementById('facebookshare').onclick = function() {
+/*END SET UP FB SDK FOR JD*/
+/**FUNCTION SHARE TO FACEBOOK */
+ function sharefb() {
   FB.ui({
   method: 'feed',
   link: 'https://vongmaianh170196.github.io/Today_quote/',
@@ -107,6 +106,10 @@ $(document).ready(function(){
 description: 'Mai Anh ',
   
 }, function(response){});
-}
+};
+/**END FUNCTION SHARE TO FACEBOOK */
+$(document).ready(function(){
+    $newquote.on('click', getQuote);
+    $('#facebookshare').on('click', sharefb);
     
 });
