@@ -82,9 +82,11 @@ function getQuote(){
  window.fbAsyncInit = function() {
     FB.init({
       appId      : '1886159281706306',
+      cookie     : true,
       xfbml      : true,
-      version    : 'v2.5'
+      version    : 'v2.8'
     });
+    FB.AppEvents.logPageView();   
   };
 
   (function(d, s, id){
@@ -94,7 +96,6 @@ function getQuote(){
      js.src = "//connect.facebook.net/en_US/sdk.js";
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
-
 /**/
 $(document).ready(function(){
     $newquote.on('click', getQuote);
